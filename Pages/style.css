@@ -109,23 +109,45 @@ a {
 }
 
 /* Grid for Gallery  */
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+
+html, body { padding: 0; margin: 0; }
+.image-grid div {
+  width: 25%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+.image01 { background-image: url(../wwwroot/src/0G0A9652.jpg); transition:transform 0.25s ease;}
+.image01:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image02 { background-image: url(../wwwroot/src/IMG_0718.jpg); transition:transform 0.25s ease;}
+.image02:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image03 { background-image: url(../wwwroot/src/IMG_0733.jpg); transition:transform 0.25s ease;}
+.image03:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image04 { background-image: url(../wwwroot/src/IMG_0741.jpg); transition:transform 0.25s ease;}
+.image04:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image05 { background-image: url('../wwwroot/src/IMG_0748.jpg'); transition:transform 0.25s ease;}
+.image05:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image06 { background-image: url('../wwwroot/src/IMG_0753.jpg'); transition:transform 0.25s ease;}
+.image06:hover{-webkit-transform:scale(1.5); transform:scale(1.5);}
+.image07 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-07.jpg'); }
+.image08 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-08.jpg'); }
+.image09 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-09.jpg'); }
+.image10 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-10.jpg'); }
+.image11 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-11.jpg'); }
+.image12 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-12.jpg'); }
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+  .image-grid div { width: 100%; }
 }
