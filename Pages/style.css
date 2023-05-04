@@ -11,11 +11,12 @@ body{
 
 }
 footer{
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;   /* Height of the footer */
   background: white;
-  border: 3px solid white;
+  border: 1px solid black;
 }
 
 #g1{
@@ -65,7 +66,7 @@ div.container{
   justify-content: center;
   padding-left: 260px;
   padding-top: 55px;
-  padding-bottom: 49px;
+  padding-bottom: 172px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%238c9caa' fill-opacity='1'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 
 }
@@ -92,6 +93,12 @@ div#block1{
   background-color: white;
 }
 
+li#k1{
+  background-color: orange;
+  list-style-type: none;
+  
+}
+
 li{
   background-color: white;
   padding-bottom: 6px;
@@ -99,4 +106,26 @@ li{
 a {
   padding: 15px;
   background-color: white;
+}
+
+/* Grid for Gallery  */
+.grid-container {
+  display: grid;
+  grid-template: auto / auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 41px;
+}
+
+.container > h1{
+  padding-bottom: 10px;
+  background-color: white;
+  padding-top: 22px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
