@@ -109,23 +109,23 @@ a {
 }
 
 /* Grid for Gallery  */
-.grid-container {
-  display: grid;
-  grid-template: auto / auto auto auto auto auto auto;
-  grid-gap: 10px;
-  background-color: white;
-  padding: 41px;
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
-.container > h1{
-  padding-bottom: 10px;
-  background-color: white;
-  padding-top: 22px;
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
 }
