@@ -149,7 +149,8 @@ q {font-style: bold; background-color: white;}
 p{font-family:'Courier New', Courier, monospace ; background-color: white; color: black;}
 
 /* Add a blue color to the author */
-.answer {padding-top: 20px; color: black;  background-color: white;}
+.answer {padding-top: 40px; color: black;  background-color: white;}
+
 
 /* end of faq style */
 
