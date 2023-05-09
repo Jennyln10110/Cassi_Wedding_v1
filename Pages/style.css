@@ -39,6 +39,8 @@ footer{
 }
 
 ul#pagetabs{
+  text-align: center;
+  font-style: bold;
   list-style-type: none;
   width: 75%;
   float: right;
